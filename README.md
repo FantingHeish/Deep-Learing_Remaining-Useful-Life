@@ -9,5 +9,4 @@
 - **評估指標：** RMSE、MAE、R²
 
 ### 專案檔案說明
-- `Turbofan_RUL_Prediction.ipynb`：主要模型訓練 Notebook
-- `README.md`：專案簡介
+- `Turbofan_RUL_Prediction.ipynb`：模型訓練 Notebook
