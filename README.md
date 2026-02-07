@@ -8,6 +8,14 @@
 - **模型：** LSTM、Transformer  
 - **評估指標：** RMSE、MAE、R²
 
+### 訓練結果
+<img width="450" height="138" alt="Screenshot 2026-02-07 at 01 21 41" src="https://github.com/user-attachments/assets/a7422958-81af-4d19-bd9f-f7196b4732c4" />
+
+<img width="712" height="388" alt="Screenshot 2026-02-07 at 01 21 48" src="https://github.com/user-attachments/assets/457c4921-34b4-449c-bd6c-134b86500234" />
+<img width="705" height="389" alt="Screenshot 2026-02-07 at 01 21 55" src="https://github.com/user-attachments/assets/1775352d-6f2b-4a5f-bb5c-aa744c940777" />
+<img width="710" height="395" alt="Screenshot 2026-02-07 at 01 22 01" src="https://github.com/user-attachments/assets/63044347-0739-4a43-b1b5-23299d9e70f0" />
+<img width="718" height="399" alt="Screenshot 2026-02-07 at 01 22 07" src="https://github.com/user-attachments/assets/9f5465c4-fc7e-4d67-889d-4bca87835b16" />
+
 ### 專案檔案說明
 - `Turbofan_RUL_Prediction.ipynb`：模型訓練 Notebook
 
