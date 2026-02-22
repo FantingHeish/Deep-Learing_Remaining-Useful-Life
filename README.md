@@ -77,7 +77,7 @@ All models were trained and evaluated consistently across FD001–FD004 datasets
 
 
 
-### 專案檔案說明
+### Project File
 - `RUL_Prediction.ipynb`：模型訓練 Notebook
 
 Link to DataSet: https://www.kaggle.com/datasets/behrad3d/nasa-cmaps
