@@ -15,16 +15,16 @@ Explore different architectures including LSTM, Seq2Seq, Autoencoder, and Transf
 3. Convert time-series data into input sequences using a sliding window approach  
 4. Normalize each sequence
 
-### 🧠 Models Evaluated
-**💡 Development Architectures：**
-Four deep learning architectures were implemented and evaluated:
+### 🧠 Model Development & Evaluation
+**💡 Model Architectures：**
+Four deep learning architectures were implemented and evaluated
 1. LSTM Multi-step
 2. LSTM Autoencoder
 3. LSTM Seq2Seq
 4. Transformer
 
-**📊 Evaluation Metrics**
-To provide a comprehensive evaluation, the following metrics were used:
+**📊 Evaluation Metrics：**
+To provide a comprehensive evaluation, the following metrics were used
 1. MAE / Median AE
 2. RMSE
 3. R² Score
@@ -78,6 +78,6 @@ All models were trained and evaluated consistently across FD001–FD004 datasets
 
 
 ### 專案檔案說明
-- `Turbofan_RUL_Prediction.ipynb`：模型訓練 Notebook
+- `RUL_Prediction.ipynb`：模型訓練 Notebook
 
 Link to DataSet: https://www.kaggle.com/datasets/behrad3d/nasa-cmaps
