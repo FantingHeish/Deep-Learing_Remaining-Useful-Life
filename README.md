@@ -1,28 +1,36 @@
 ## Engine-Remaining-Life-Prediction
 
-### 🔧 Task Definition
-This project focuses on Remaining Useful Life (RUL) prediction using the C-MAPSS turbofan engine datasets (FD001–FD004).
-Given historical multivariate sensor readings, the goal is to predict the future degradation trajectory of RUL, formulated as a multi-step sequence prediction problem.
-Past sensor window  →  Future RUL trajectory
+### 🚀 Project Overview
+This project focuses on predict the degradation process and Remaining Useful Life (RUL) of engines using deep learning models, Given historical multivariate sensor readings and formulated as a multi-step sequence prediction problem.  
+Explore different architectures including LSTM, Seq2Seq, Autoencoder, and Transformer to forecast RUL across multiple sensors.
 
-Each input sample consists of a fixed-length sensor window (32 timesteps × 24 features), and the model outputs a 5-step ahead RUL sequence.
+### 🎯 Task Definition
+1. Transform historical sensor readings into sequence inputs to predict future RUL trajectories
+2. Support single-step and multi-step forecasting, and compare different models’ ability to capture degradation trends
+3. Evaluate model accuracy and reliability using multiple comprehensive metrics
+
+### 🗂 Data Processing
+1. Compute RUL for each sensor  
+2. Split dataset into 80% training and 20% testing sets  
+3. Convert time-series data into input sequences using a sliding window approach  
+4. Normalize each sequence
 
 ### 🧠 Models Evaluated
 **💡 Development Architectures：**
 Four deep learning architectures were implemented and evaluated:
-- LSTM Multi-step
-- LSTM Autoencoder
-- LSTM Seq2Seq
-- Transformer
+1. LSTM Multi-step
+2. LSTM Autoencoder
+3. LSTM Seq2Seq
+4. Transformer
 
 **📊 Evaluation Metrics**
 To provide a comprehensive evaluation, the following metrics were used:
-- MAE / Median AE
-- RMSE
-- R² Score
-- Explained Variance
-- sMAPE
-- MAPE
+1. MAE / Median AE
+2. RMSE
+3. R² Score
+4. Explained Variance
+5. sMAPE
+6. MAPE
 
 All models were trained and evaluated consistently across FD001–FD004 datasets.
 
