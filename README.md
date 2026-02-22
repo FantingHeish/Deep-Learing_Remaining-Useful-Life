@@ -1,4 +1,4 @@
-## Engine-Remaining-Life-Prediction
+## Deep Learing Modle_Remaining Useful Life
 
 ### 🚀 Project Overview
 This project focuses on predict the degradation process and Remaining Useful Life (RUL) of engines using deep learning models, Given historical multivariate sensor readings and formulated as a multi-step sequence prediction problem.  
