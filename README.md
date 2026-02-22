@@ -27,7 +27,9 @@ To provide a comprehensive evaluation, the following metrics were used:
 All models were trained and evaluated consistently across FD001–FD004 datasets.
 
 ### 訓練結果
-**1⃣ FD001**
+#### 1⃣ FD001**
+**✨📈 FD001 Results Summary**
+
 <img width="1230" height="477" alt="FD001_Loss_MAE" src="https://github.com/user-attachments/assets/af7c32dd-f83c-4c7e-ab28-0fc3db45dba4" />
 <img width="1230" height="427" alt="FD001_LSTM_Mulit" src="https://github.com/user-attachments/assets/96d8fa9a-0fe2-4f89-a0b4-47c7cadf4b7e" />
 <img width="1230" height="427" alt="FD001_LSTM_Autoencoder" src="https://github.com/user-attachments/assets/dd2fe0ea-bfc0-4e37-bdce-8bb7a0227a4f" />
@@ -55,7 +57,7 @@ All models were trained and evaluated consistently across FD001–FD004 datasets
 <img width="1225" height="431" alt="FD004_LSTM_Seq" src="https://github.com/user-attachments/assets/7d69e646-ff69-4bd0-8588-38adff26116a" />
 <img width="1225" height="428" alt="FD004_Transfrom" src="https://github.com/user-attachments/assets/ab97a511-db52-4975-b555-524f5c7836c3" />
 
-**📈 Results Summary**
+
 
 ### 專案檔案說明
 - `Turbofan_RUL_Prediction.ipynb`：模型訓練 Notebook
