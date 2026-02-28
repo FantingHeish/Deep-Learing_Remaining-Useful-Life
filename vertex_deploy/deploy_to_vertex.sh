@@ -1,19 +1,12 @@
-#!/bin/bash
 # =========================================================
-# deploy_to_vertex.sh — 一鍵部署到 GCP Vertex AI
-#
-# 前置需求:
-#   1. 安裝 Docker Desktop (https://www.docker.com/products/docker-desktop)
-#   2. 安裝 gcloud CLI (https://cloud.google.com/sdk/docs/install)
-#   3. GCP 帳號已開啟 billing
+# deploy_to_vertex.sh — 部署到 GCP Vertex AI
 #
 # 使用方式:
 #   chmod +x deploy_to_vertex.sh
 #   ./deploy_to_vertex.sh
 # =========================================================
-
-# ── ⚠️  只需要改這裡 ──────────────────────────────────────
-PROJECT_ID="agile-entry-454207-t3"   # GCP Console 右上角的 Project ID
+# ────────────────────────────────────────
+PROJECT_ID="agile-entry-454207-t3"   # GCP Project ID
 REGION="us-central1"
 IMAGE_NAME="rul-predictor"
 IMAGE_TAG="v1"
