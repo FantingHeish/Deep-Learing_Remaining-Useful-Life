@@ -1,19 +1,20 @@
 ## Deep Learing Modle_Remaining Useful Life
 
 ### 🚀 Project Overview
-This project focuses on predict the degradation process and Remaining Useful Life (RUL) of engines using deep learning models, Given historical multivariate sensor readings and formulated as a multi-step sequence prediction problem.  
-Explore different architectures including LSTM, Seq2Seq, Autoencoder, and Transformer to forecast RUL across multiple sensors.
+This project focuses on predicting the degradation process and Remaining Useful Life (RUL) of turbofan jet engines using the NASA C-MAPSS dataset. Four deep learning architectures are trained, compared, and deployed as a production REST API on GCP Vertex AI.
+Given historical multivariate sensor readings formulated as a multi-step sequence prediction problem, the models forecast RUL across multiple time horizons. Explore different architectures including LSTM, Seq2Seq, Autoencoder, and Transformer to forecast RUL across multiple sensors.
 
 ### 🎯 Task Definition
 1. Transform historical sensor readings into sequence inputs to predict future RUL trajectories
-2. Support single-step and multi-step forecasting, and compare different models’ ability to capture degradation trends
+2. Support single-step and multi-step forecasting, comparing different models' ability to capture degradation trends
 3. Evaluate model accuracy and reliability using multiple comprehensive metrics
+4. Deploy all models as a scalable REST API endpoint on GCP Vertex AI
 
 ### 🗂 Data Processing
 1. Compute RUL for each sensor  
 2. Split dataset into 80% training and 20% testing sets  
 3. Convert time-series data into input sequences using a sliding window approach  
-4. Normalize each sequence
+4. Normalize each sequence independently 
 
 ### 🧠 Model Development & Evaluation
 **💡 Model Architectures：**
@@ -23,16 +24,51 @@ Four deep learning architectures were implemented and evaluated
 3. LSTM Seq2Seq
 4. Transformer
 
-**📊 Evaluation Metrics：**
-To provide a comprehensive evaluation, the following metrics were used
-1. MAE / Median AE
-2. RMSE
-3. R² Score
-4. Explained Variance
-5. sMAPE
-6. MAPE
+### 🧠 Model Architectures
+Four deep learning architectures implemented and evaluated:
+1. LSTM Multi-step
 
+ModelArchitecturePrediction TypeLSTM Multi-step2-layer LSTM + BatchNorm + DenseMulti-step (5 steps)LSTM AutoencoderEncoder-Decoder LSTM + prediction headSingle-stepLSTM Seq2SeqEncoder-Decoder with teacher forcingMulti-step (5 steps)TransformerMulti-head attention + positional encodingSingle-step
+Input: 32 timesteps × 24 features (3 operational settings + 21 sensor readings)
+
+### 📊 Evaluation Metrics：
+To provide a comprehensive evaluation, the following metrics were used
+1. MAE / Median AE — average and median absolute prediction error
+2. RMSE — root mean squared error, sensitive to large errors
+3. R² Score — proportion of variance explained
+4. Explained Variance — similar to R² but robust to systematic bias
+5. sMAPE — symmetric MAPE, avoids extreme values near RUL=0
+6. MAPE — standard percentage error (filtered for RUL > 10)
 All models were trained and evaluated consistently across FD001–FD004 datasets.
+
+### **🚢 Deployment**
+All four models are containerized and deployed as a single REST API on GCP Vertex AI.
+Local Setup
+bashcd vertex_deploy
+pip install fastapi uvicorn tensorflow
+uvicorn app:app --host 0.0.0.0 --port 8080
+
+API Usage
+pythonimport requests
+
+payload = {
+    "sequences": [[[...]]],  # shape: (batch_size, 32, 24)
+    "model_name": "transformer"  # lstm_multistep | lstm_autoencoder | lstm_seq2seq | transformer
+}
+r = requests.post("http://localhost:8080/predict", json=payload)
+# {"model_name": "transformer", "predictions": [45.23], "count": 1}
+
+GCP Deployment
+bashcd vertex_deploy
+chmod +x deploy_to_vertex.sh
+./deploy_to_vertex.sh   # builds image → pushes to GCR → uploads model → creates endpoint
+
+
+### **🛠 Tech Stack**
+**Modeling:** Python, TensorFlow/Keras, NumPy, Scikit-learn
+**Serving:** FastAPI, Uvicorn
+**Infrastructure:** Docker, GCP Vertex AI, GCP Container Registry
+**Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
 ### 訓練結果
 #### 1⃣ FD001**
@@ -75,9 +111,3 @@ All models were trained and evaluated consistently across FD001–FD004 datasets
 <img width="1225" height="431" alt="FD004_LSTM_Seq" src="https://github.com/user-attachments/assets/7d69e646-ff69-4bd0-8588-38adff26116a" />
 <img width="1225" height="428" alt="FD004_Transfrom" src="https://github.com/user-attachments/assets/ab97a511-db52-4975-b555-524f5c7836c3" />
 
-
-
-### Project File
-- `RUL_Prediction.ipynb`：模型訓練 Notebook
-
-Link to DataSet: https://www.kaggle.com/datasets/behrad3d/nasa-cmaps
