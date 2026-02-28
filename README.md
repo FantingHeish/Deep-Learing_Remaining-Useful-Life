@@ -16,24 +16,14 @@ Given historical multivariate sensor readings formulated as a multi-step sequenc
 3. Convert time-series data into input sequences using a sliding window approach  
 4. Normalize each sequence independently 
 
-### 🧠 Model Development & Evaluation
-**💡 Model Architectures：**
-Four deep learning architectures were implemented and evaluated
-1. LSTM Multi-step
-2. LSTM Autoencoder
-3. LSTM Seq2Seq
-4. Transformer
-
 ### 🧠 Model Architectures
 Four deep learning architectures implemented and evaluated:
 | Model | Architecture | Prediction Type |
 |---|---|---|
 | LSTM Multi-step | 2-layer LSTM + BatchNorm + Dense | Multi-step |
-|LSTM Autoencoder | Encoder-Decoder LSTM + prediction head | Single-step |
-|LSTM Seq2Seq |Encoder-Decoder with teacher forcing | Multi-step (5 steps) |
-|Transformer | Multi-head attention + positional encoding | Single-step |
-Input: 32 timesteps × 24 features (3 operational settings + 21 sensor readings)
-
+| LSTM Autoencoder | Encoder-Decoder LSTM + prediction head | Single-step |
+| LSTM Seq2Seq |Encoder-Decoder with teacher forcing | Multi-step (5 steps) |
+| Transformer | Multi-head attention + positional encoding | Single-step |
 
 ### 📊 Evaluation Metrics：
 To provide a comprehensive evaluation, the following metrics were used
