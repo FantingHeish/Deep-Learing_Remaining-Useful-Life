@@ -25,7 +25,7 @@ Four deep learning architectures implemented and evaluated:
 | LSTM Seq2Seq |Encoder-Decoder with teacher forcing | Multi-step |
 | Transformer | Multi-head attention + positional encoding | Single-step |
 
-### 📊 Evaluation Metrics：
+### 📊 Evaluation Metrics
 To provide a comprehensive evaluation, the following metrics were used
 1. MAE / Median AE — average and median absolute prediction error
 2. RMSE — root mean squared error, sensitive to large errors
