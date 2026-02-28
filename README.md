@@ -89,7 +89,7 @@ chmod +x deploy_to_vertex.sh
 - **Infrastructure:** Docker, GCP Vertex AI, GCP Container Registry
 - **Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
-### 訓練結果
+### ✨✨Result
 #### 1⃣ FD001**
 **✨📈 FD001 Results Summary**
 <img width="907" height="295" alt="FD001_summery" src="https://github.com/user-attachments/assets/10fea008-6180-457f-945b-190a298542d1" />
