@@ -90,15 +90,15 @@ chmod +x deploy_to_vertex.sh
 - **Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
 ### ✨✨Result
-<div style="background-color:#f6f8fa; padding:16px; border-radius:6px; margin-bottom:16px;">
+
 #### 1⃣ FD001**
-**✨📈 FD001 Results Summary**
+> **✨📈 FD001 Results Summary**
 <img width="1123" height="341" alt="FD001_summery" src="https://github.com/user-attachments/assets/3570c5ec-e538-4916-9f73-b51cb5cbaacc" />
-**✨🦾 LSTM Multi-step**
-**✨🦾 LSTM Autoencoder**
-**✨🦾 LSTM Seq2Seq**
-**✨🦾 Transformer**
-</div>
+> **✨🦾 LSTM Multi-step**
+> **✨🦾 LSTM Autoencoder**
+> **✨🦾 LSTM Seq2Seq**
+> **✨🦾 Transformer**
+
 
 #### **2⃣ FD002**
 **✨📈 FD002 Results Summary**
