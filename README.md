@@ -93,7 +93,7 @@ chmod +x deploy_to_vertex.sh
 
 #### 1⃣ FD001**
 > **✨📈 FD001 Results Summary**
-<img width="1123" height="341" alt="FD001_summery" src="https://github.com/user-attachments/assets/3570c5ec-e538-4916-9f73-b51cb5cbaacc" />
+> <img width="1123" height="341" alt="FD001_summery" src="https://github.com/user-attachments/assets/3570c5ec-e538-4916-9f73-b51cb5cbaacc" />
 > **✨🦾 LSTM Multi-step**
 > **✨🦾 LSTM Autoencoder**
 > **✨🦾 LSTM Seq2Seq**
