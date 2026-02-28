@@ -22,7 +22,7 @@ Four deep learning architectures implemented and evaluated:
 |---|---|---|
 | LSTM Multi-step | 2-layer LSTM + BatchNorm + Dense | Multi-step |
 | LSTM Autoencoder | Encoder-Decoder LSTM + prediction head | Single-step |
-| LSTM Seq2Seq |Encoder-Decoder with teacher forcing | Multi-step (5 steps) |
+| LSTM Seq2Seq |Encoder-Decoder with teacher forcing | Multi-step |
 | Transformer | Multi-head attention + positional encoding | Single-step |
 
 ### 📊 Evaluation Metrics：
@@ -83,12 +83,11 @@ chmod +x deploy_to_vertex.sh
 ./deploy_to_vertex.sh   # builds image → pushes to GCR → uploads model → creates endpoint
 ```
 
-
 ### **🛠 Tech Stack**
-**Modeling:** Python, TensorFlow/Keras, NumPy, Scikit-learn
-**Serving:** FastAPI, Uvicorn
-**Infrastructure:** Docker, GCP Vertex AI, GCP Container Registry
-**Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
+- **Modeling:** Python, TensorFlow/Keras, NumPy, Scikit-learn
+- **Serving:** FastAPI, Uvicorn
+- **Infrastructure:** Docker, GCP Vertex AI, GCP Container Registry
+- **Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
 ### 訓練結果
 #### 1⃣ FD001**
