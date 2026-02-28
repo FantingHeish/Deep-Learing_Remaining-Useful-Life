@@ -36,14 +36,37 @@ To provide a comprehensive evaluation, the following metrics were used
 All models were trained and evaluated consistently across FD001–FD004 datasets.
 
 ### **🚢 Deployment**
-All four models are containerized and deployed as a single REST API on GCP Vertex AI.
-Local Setup
-bashcd vertex_deploy
+All four models are containerized and deployed as a **single REST API** on **GCP Vertex AI**.
+
+#### Deployment Pipeline
+1. Train models and save as `.keras` files
+2. Wrap with **FastAPI** as a REST API supporting all 4 models
+3. Containerize with **Docker** to ensure environment consistency
+4. Push image to **GCP Container Registry**
+5. Deploy to **GCP Vertex AI** as a managed endpoint
+
+#### Architecture
+\```
+FastAPI server (app.py)
+    └── 4 models loaded at startup
+            ├── FD001_lstm_multistep.keras
+            ├── FD001_lstm_autoencoder.keras
+            ├── FD001_lstm_seq2seq.keras
+            └── FD001_transformer.keras
+
+Docker container → GCP Container Registry → Vertex AI Managed Endpoint
+\```
+
+#### Local Setup
+\```bash
+cd vertex_deploy
 pip install fastapi uvicorn tensorflow
 uvicorn app:app --host 0.0.0.0 --port 8080
+\```
 
-API Usage
-pythonimport requests
+#### API Usage
+\```python
+import requests
 
 payload = {
     "sequences": [[[...]]],  # shape: (batch_size, 32, 24)
@@ -51,11 +74,14 @@ payload = {
 }
 r = requests.post("http://localhost:8080/predict", json=payload)
 # {"model_name": "transformer", "predictions": [45.23], "count": 1}
+\```
 
-GCP Deployment
-bashcd vertex_deploy
+#### GCP Deployment
+\```bash
+cd vertex_deploy
 chmod +x deploy_to_vertex.sh
 ./deploy_to_vertex.sh   # builds image → pushes to GCR → uploads model → creates endpoint
+\```
 
 
 ### **🛠 Tech Stack**
