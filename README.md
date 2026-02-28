@@ -40,7 +40,7 @@ All four models are containerized and deployed as a **single REST API** on **GCP
 
 #### Deployment Pipeline
 1. Train models and save as `.keras` files
-2. Wrap with **FastAPI** as a REST API supporting all 4 models
+2. Wrap with **FastAPI** as a **REST API** supporting all 4 models
 3. Containerize with **Docker** to ensure environment consistency
 4. Push image to **GCP Container Registry**
 5. Deploy to **GCP Vertex AI** as a managed endpoint
@@ -90,15 +90,15 @@ chmod +x deploy_to_vertex.sh
 - **Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
 ### ✨✨Result
+<div style="background-color:#f6f8fa; padding:16px; border-radius:6px; margin-bottom:16px;">
 #### 1⃣ FD001**
 **✨📈 FD001 Results Summary**
-<img width="907" height="295" alt="FD001_summery" src="https://github.com/user-attachments/assets/10fea008-6180-457f-945b-190a298542d1" />
-
-<img width="1230" height="477" alt="FD001_Loss_MAE" src="https://github.com/user-attachments/assets/af7c32dd-f83c-4c7e-ab28-0fc3db45dba4" />
-<img width="1230" height="427" alt="FD001_LSTM_Mulit" src="https://github.com/user-attachments/assets/96d8fa9a-0fe2-4f89-a0b4-47c7cadf4b7e" />
-<img width="1230" height="427" alt="FD001_LSTM_Autoencoder" src="https://github.com/user-attachments/assets/dd2fe0ea-bfc0-4e37-bdce-8bb7a0227a4f" />
-<img width="1230" height="427" alt="FD001_LSTM_Seq" src="https://github.com/user-attachments/assets/f582b9a2-e32a-4605-89b2-4c6759f2b896" />
-<img width="1230" height="427" alt="FD001_Transfrom" src="https://github.com/user-attachments/assets/0ac47011-31f8-4e78-8933-e6ae6405cdd2" />
+<img width="1123" height="341" alt="FD001_summery" src="https://github.com/user-attachments/assets/3570c5ec-e538-4916-9f73-b51cb5cbaacc" />
+**✨🦾 LSTM Multi-step**
+**✨🦾 LSTM Autoencoder**
+**✨🦾 LSTM Seq2Seq**
+**✨🦾 Transformer**
+</div>
 
 #### **2⃣ FD002**
 **✨📈 FD002 Results Summary**
