@@ -30,6 +30,10 @@ Four deep learning architectures implemented and evaluated:
 
 ModelArchitecturePrediction TypeLSTM Multi-step2-layer LSTM + BatchNorm + DenseMulti-step (5 steps)LSTM AutoencoderEncoder-Decoder LSTM + prediction headSingle-stepLSTM Seq2SeqEncoder-Decoder with teacher forcingMulti-step (5 steps)TransformerMulti-head attention + positional encodingSingle-step
 Input: 32 timesteps × 24 features (3 operational settings + 21 sensor readings)
+| Model | Architecture | Prediction Type |
+|---|---|---|
+| LSTM Multi-step | 2-layer LSTM + BatchNorm + Dense | Multi-step (5 steps) |
+|LSTM AutoencoderEncoder-Decoder | LSTM + prediction head | Single-step |
 
 ### 📊 Evaluation Metrics：
 To provide a comprehensive evaluation, the following metrics were used
