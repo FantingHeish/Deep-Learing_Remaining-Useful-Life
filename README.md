@@ -46,7 +46,7 @@ All four models are containerized and deployed as a **single REST API** on **GCP
 5. Deploy to **GCP Vertex AI** as a managed endpoint
 
 #### Architecture
-\```
+```
 FastAPI server (app.py)
     └── 4 models loaded at startup
             ├── FD001_lstm_multistep.keras
@@ -55,17 +55,17 @@ FastAPI server (app.py)
             └── FD001_transformer.keras
 
 Docker container → GCP Container Registry → Vertex AI Managed Endpoint
-\```
+```
 
 #### Local Setup
-\```bash
+```bash
 cd vertex_deploy
 pip install fastapi uvicorn tensorflow
 uvicorn app:app --host 0.0.0.0 --port 8080
-\```
+```
 
 #### API Usage
-\```python
+```python
 import requests
 
 payload = {
@@ -74,14 +74,14 @@ payload = {
 }
 r = requests.post("http://localhost:8080/predict", json=payload)
 # {"model_name": "transformer", "predictions": [45.23], "count": 1}
-\```
+```
 
 #### GCP Deployment
-\```bash
+```bash
 cd vertex_deploy
 chmod +x deploy_to_vertex.sh
 ./deploy_to_vertex.sh   # builds image → pushes to GCR → uploads model → creates endpoint
-\```
+```
 
 
 ### **🛠 Tech Stack**
