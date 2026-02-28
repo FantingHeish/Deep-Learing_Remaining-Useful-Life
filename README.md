@@ -120,7 +120,7 @@ chmod +x deploy_to_vertex.sh
 
 
 #### **3⃣ FD003**
-> **✨📈 FD003 Results Summary**
+**✨📈 FD003 Results Summary**
 <img width="1123" height="341" alt="FD003_summery" src="https://github.com/user-attachments/assets/f350dcd4-9e3b-41ba-9a88-b232dd42de0b" />
 <img width="1221" height="474" alt="FD003_train_his" src="https://github.com/user-attachments/assets/a31cc31a-3635-4a60-b683-09df428fc256" />
 **✨ LSTM Multi-step**
