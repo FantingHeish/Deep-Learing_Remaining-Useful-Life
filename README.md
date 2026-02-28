@@ -89,44 +89,60 @@ chmod +x deploy_to_vertex.sh
 - **Infrastructure:** Docker, GCP Vertex AI, GCP Container Registry
 - **Dataset:** NASA C-MAPSS(https://www.kaggle.com/datasets/behrad3d/nasa-cmaps)
 
-### ✨✨Result
+### ✨✨Result 
 
 #### 1⃣ FD001**
 > **✨📈 FD001 Results Summary**
-> <img width="1123" height="341" alt="FD001_summery" src="https://github.com/user-attachments/assets/3570c5ec-e538-4916-9f73-b51cb5cbaacc" />
-> **✨🦾 LSTM Multi-step**
-> **✨🦾 LSTM Autoencoder**
-> **✨🦾 LSTM Seq2Seq**
-> **✨🦾 Transformer**
+> <img width="1123" height="341" alt="FD001_summery" src="https://github.com/user-attachments/assets/ccd4ac00-5692-4ce9-b61f-544ffd5100e1" />
+> <img width="1221" height="465" alt="FD001_tain_his" src="https://github.com/user-attachments/assets/fe09833d-51a7-49ea-9fa9-03ac02ec2ace" />
+> **✨ LSTM Multi-step**
+> <img width="1221" height="438" alt="FD001_multi" src="https://github.com/user-attachments/assets/e6e8f509-ff93-40d8-82ec-65e4ad1d14d7" />
+> **✨ LSTM Autoencoder**
+><img width="1221" height="422" alt="FD001_autoencoder" src="https://github.com/user-attachments/assets/1f858c72-3f1e-4429-8b87-42d8c44f0f2a" />
+> **✨ LSTM Seq2Seq**
+><img width="1221" height="438" alt="FD001_Seq2seq" src="https://github.com/user-attachments/assets/af38a816-366c-438d-bb2b-58087f957d7c" />
+> **✨ Transformer**
+> <img width="1221" height="440" alt="FD001_transf" src="https://github.com/user-attachments/assets/6b2fd466-b975-4742-ac6d-96bea15bcf90" />
 
 
 #### **2⃣ FD002**
-**✨📈 FD002 Results Summary**
-<img width="907" height="295" alt="FD002_summery" src="https://github.com/user-attachments/assets/481170e4-2fcf-4063-aca3-db92edbe2f12" />
+> **✨📈 FD002 Results Summary**
+> <img width="1123" height="341" alt="FD002_summery" src="https://github.com/user-attachments/assets/57918dd0-2c32-4f2c-8156-f472909c49e4" />
+> <img width="1221" height="467" alt="FD002_train_his" src="https://github.com/user-attachments/assets/5d434e31-85ee-4fbb-bae6-716eb8600cbb" />
+> **✨ LSTM Multi-step**
+> <img width="1221" height="426" alt="FD002_multi" src="https://github.com/user-attachments/assets/88b771be-41b1-44a8-a858-36269f8a8e9f" />
+> **✨ LSTM Autoencoder**
+><img width="1221" height="426" alt="FD002_autoencoder" src="https://github.com/user-attachments/assets/7880204a-6dff-4610-befc-2c5b7e6e0c83" />
+> **✨ LSTM Seq2Seq**
+><img width="1221" height="430" alt="FD002_Seq2seq" src="https://github.com/user-attachments/assets/b6771068-3c29-45a0-b55e-192372e8f2d1" />
+> **✨ Transformer**
+> <img width="1221" height="426" alt="FD002_transf" src="https://github.com/user-attachments/assets/f46b6d73-2405-490b-ad7f-93f6cbd0601c" />
 
-<img width="1225" height="480" alt="FD002_Loss_MAE" src="https://github.com/user-attachments/assets/ebcbca37-e05a-4fed-b124-9565434a1d7c" />
-<img width="1225" height="426" alt="FD002_LSTM_Multi" src="https://github.com/user-attachments/assets/92cdf3cb-7ec7-4bb1-a38b-7ec0d76fb341" />
-<img width="1225" height="426" alt="FD002_LSTM_Autoencoder" src="https://github.com/user-attachments/assets/dc5213a8-f12c-4838-8353-42a2cf487643" />
-<img width="1225" height="426" alt="FD002_LSTM_Seq" src="https://github.com/user-attachments/assets/51f05ebf-ab41-4853-a010-faf7a56376f8" />
-<img width="1225" height="426" alt="FD002_Transfrom" src="https://github.com/user-attachments/assets/cf8182e4-8cd0-492e-a513-c9a14629588f" />
 
 #### **3⃣ FD003**
-**✨📈 FD003 Results Summary**
-<img width="907" height="295" alt="FD003_summery" src="https://github.com/user-attachments/assets/98142c66-1dd1-433e-ac72-ac3f69dd1df5" />
+> **✨📈 FD003 Results Summary**
+><img width="1123" height="341" alt="FD003_summery" src="https://github.com/user-attachments/assets/f350dcd4-9e3b-41ba-9a88-b232dd42de0b" />
+> <img width="1221" height="474" alt="FD003_train_his" src="https://github.com/user-attachments/assets/a31cc31a-3635-4a60-b683-09df428fc256" />
+> **✨ LSTM Multi-step**
+> <img width="1221" height="428" alt="FD003_multi" src="https://github.com/user-attachments/assets/35004385-c1a0-43d0-bc95-e1f4d2aaf22b" />
+> **✨ LSTM Autoencoder**
+> <img width="1221" height="427" alt="FD003_autoencoder" src="https://github.com/user-attachments/assets/c8e03e1d-f301-404d-8e89-edcc025661fc" />
+> **✨ LSTM Seq2Seq**
+><img width="1221" height="428" alt="FD003_Seq2seq" src="https://github.com/user-attachments/assets/6796d7d1-6749-450f-be19-57a97d5c654a" />
+> **✨ Transformer**
+> <img width="1221" height="431" alt="FD003_transf" src="https://github.com/user-attachments/assets/f036d281-930d-49f6-9660-fc3235f70ae4" />
 
-<img width="1225" height="478" alt="FD003_Loss_MAE" src="https://github.com/user-attachments/assets/689ea943-fd47-4dac-98a4-bf9ed57914fd" />
-<img width="1225" height="433" alt="FD003_LSTM_Multi" src="https://github.com/user-attachments/assets/90c27c85-4e73-481c-af76-2e5a22302570" />
-<img width="1225" height="424" alt="FD003_LSTM_Autoencoder" src="https://github.com/user-attachments/assets/53c6dfc5-1769-4d3b-b24a-6d0a6d9b5987" />
-<img width="1225" height="432" alt="FD003_LSTM_Seq" src="https://github.com/user-attachments/assets/d4277b56-454f-4857-9b2f-44cbe3841cd6" />
-<img width="1225" height="429" alt="FD003_Transfrom" src="https://github.com/user-attachments/assets/cd986dc9-cd5c-44e1-85f5-e12ea553dbfd" />
 
 #### **4⃣ FD004**
-**✨📈 FD004 Results Summary**
-<img width="907" height="295" alt="FD004_summery" src="https://github.com/user-attachments/assets/f48be03e-0727-4931-8e6b-ff97acc90a0b" />
-
-<img width="1225" height="480" alt="FD004_Loss_MAE" src="https://github.com/user-attachments/assets/a90d0042-7cfc-44b2-8c6c-1fed1d18d00d" />
-<img width="1225" height="429" alt="FD004_LSTM_Multi" src="https://github.com/user-attachments/assets/89a4c9b7-c8e0-455d-9e8d-9cdc4ed0d34e" />
-<img width="1225" height="430" alt="FD004_LSTM_Autoencoder" src="https://github.com/user-attachments/assets/ae3a6666-824c-476c-87c4-266b490ec827" />
-<img width="1225" height="431" alt="FD004_LSTM_Seq" src="https://github.com/user-attachments/assets/7d69e646-ff69-4bd0-8588-38adff26116a" />
-<img width="1225" height="428" alt="FD004_Transfrom" src="https://github.com/user-attachments/assets/ab97a511-db52-4975-b555-524f5c7836c3" />
+> **✨📈 FD004 Results Summary**
+> <img width="1123" height="341" alt="FD004_summery" src="https://github.com/user-attachments/assets/5fd6b3e4-0565-4a94-8659-82733ae0c3c0" />
+> <img width="1221" height="477" alt="FD004_train_his" src="https://github.com/user-attachments/assets/c30a7fbc-ddd3-478b-938b-ae16c52f45c5" />
+> **✨ LSTM Multi-step**
+> <img width="1221" height="426" alt="FD004_multi" src="https://github.com/user-attachments/assets/9cd83b84-7695-4513-911f-dd314e31ca0a" />
+> **✨ LSTM Autoencoder**
+><img width="1221" height="426" alt="FD004_antoencoder" src="https://github.com/user-attachments/assets/3167f092-8cb7-4350-950b-45ea4f2b2920" />
+> **✨ LSTM Seq2Seq**
+><img width="1221" height="426" alt="FD004_Seq2seq" src="https://github.com/user-attachments/assets/e2fa7239-0728-4e50-a680-ee956995b4c0" />
+> **✨ Transformer**
+> <img width="1221" height="426" alt="FD004_transf" src="https://github.com/user-attachments/assets/1f9c2732-750d-4845-b165-9fb19088a739" />
 
